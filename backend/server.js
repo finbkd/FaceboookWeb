@@ -13,7 +13,7 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// import routes
+//routes
 import userRoute from "../backend/routes/users.js";
 import authRoute from "../backend/routes/auth.js";
 import postRoute from "../backend/routes/posts.js";
