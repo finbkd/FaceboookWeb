@@ -1,3 +1,29 @@
 .Container {
   background-color: #f0f2f5;
+  margin-left: 120px;
+}
+.Title {
+  margin-top: 26px;
+  font-size: 17px;
+  color: #050505;
+  font-weight: 500;
+}
+
+.friend {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    margin-right: 12px;
+  }
+}
+
+.name {
+  color: #050505;
+  font-size: 14.3px;
+  font-weight: 500;
 }

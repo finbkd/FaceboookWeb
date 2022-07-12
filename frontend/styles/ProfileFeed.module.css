@@ -1,0 +1,142 @@
+.profileContainer {
+  margin-left: 260px;
+  width: 1250px;
+  background-color: white;
+}
+
+.Cover {
+  object-fit: cover;
+  width: 100%;
+  height: 462px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.profileImg {
+  width: 174px;
+  height: 174px;
+  border-radius: 50%;
+  border: 5px #fefaf5 solid;
+  position: absolute;
+  top: 430px;
+  left: 290px;
+  z-index: 100;
+}
+
+.userInfo {
+  height: 218px;
+}
+.userInfo hr {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.userInfoTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.profileLeft {
+  display: flex;
+  flex-direction: column;
+  margin-left: 220px;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.friendsCount {
+  font-size: 18px;
+  color: #65676b;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.friendsIcon {
+  display: flex;
+}
+
+.firsticon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-left: -4px;
+}
+
+.profileRight {
+  display: flex;
+  margin-top: 90px;
+}
+.profileRight button {
+  width: 132px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profileRight svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.story {
+  background-color: #1877f2;
+  color: white;
+}
+.story svg {
+  fill: white;
+}
+
+.edit {
+  margin-left: 8px;
+  margin-right: 31px;
+  background-color: #e4e6eb;
+  color: black;
+}
+.edit svg {
+  fill: inherit;
+}
+
+.userInfoBottom {
+  margin-top: 20px;
+  margin-left: 47px;
+  display: flex;
+  gap: 30px;
+  font-weight: 500;
+  color: #65676b;
+  margin-bottom: 21px;
+}
+
+.miscContainer {
+  border-top: 1px solid #e4e6eb;
+  background-color: #f0f2f5;
+  display: flex;
+  margin-left: 80px;
+  padding-top: 15px;
+}
+
+.left {
+  width: 490px;
+  height: 100%;
+  margin-left: 215px;
+  margin-right: 15px;
+}
+
+.right {
+  width: 682px;
+}/*# sourceMappingURL=ProfileFeed.module.css.map */

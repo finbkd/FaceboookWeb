@@ -1,4 +1,4 @@
 .container {
-  display: grid;
-  grid-template-columns: 80px 360px 890px auto;
+  display: flex;
+  background-color: #f0f2f5;
 }/*# sourceMappingURL=Home.module.css.map */

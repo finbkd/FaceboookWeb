@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Input, Button } from "@chakra-ui/react";
 import styles from "../styles/SideBar.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";

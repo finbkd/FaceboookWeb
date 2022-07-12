@@ -1,9 +1,11 @@
 .Container {
   background-color: #f0f2f5;
-  z-index: -1;
+  z-index: 99;
   width: 360px;
   padding-left: 16px;
-  height: 100vh;
+  position: fixed;
+  margin-left: 80px;
+  height: 100%;
 }
 
 .logo {

@@ -1,0 +1,117 @@
+.container {
+  margin-top: 22px;
+  width: 100%;
+}
+
+.postContainer {
+  background-color: white;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.postHeader {
+  display: block;
+  padding-top: 13px;
+  padding-left: 16px;
+  display: flex;
+}
+
+.photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.postDate {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.postDesc {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+}
+
+.postImg {
+  height: auto;
+  width: auto;
+}
+
+.postResponseTop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 18px;
+}
+
+.postLeftTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.thumbsup {
+  height: 25px;
+  width: 25px;
+  z-index: 999;
+}
+
+.heart {
+  margin-left: -7px;
+  height: 21px;
+  width: 21px;
+  z-index: 99;
+}
+
+.likeNames {
+  color: #65676b;
+  font-size: 15px;
+  margin-left: 7px;
+}
+
+.postRighTop {
+  color: #65676b;
+  font-size: 15px;
+  margin-right: 18px;
+}
+
+.postResponseBottom {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: #65676b;
+  margin-top: 9px;
+  padding-bottom: 11px;
+  margin-left: 95px;
+  margin-right: 95px;
+  font-weight: 500;
+  font-size: 15px;
+
+  svg {
+    height: 18px;
+    width: 18px;
+    fill: #65676b;
+    margin-right: 8px;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

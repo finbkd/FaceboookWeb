@@ -27,18 +27,18 @@ const userSchema = mongoose.Schema(
       type: String,
       default: "",
     },
-    followers: {
+    friends: {
       type: Array, //[user1ID, user2ID, user3ID]
       default: [],
     },
-    followings: {
-      type: Array, //[user1ID, user2ID, user3ID]
-      default: [],
-    },
-    isAdmin: {
-      type: Boolean,
-      default: false,
-    },
+    // followers: {
+    //   type: Array, //[user1ID, user2ID, user3ID]
+    //   default: [],
+    // },
+    // followings: {
+    //   type: Array, //[user1ID, user2ID, user3ID]
+    //   default: [],
+    // },
     desc: {
       type: String,
       max: 50,
@@ -52,8 +52,8 @@ const userSchema = mongoose.Schema(
       max: 50,
     },
     relationship: {
-      type: Number,
-      enum: [1, 2, 3],
+      type: String,
+      enum: ["Single", "Married", "Dating"],
     },
   },
   {
@@ -64,9 +64,3 @@ const userSchema = mongoose.Schema(
 const User = mongoose.model("User", userSchema);
 
 export default User;
-
-/* 
-  username
-
-
-*/

@@ -1,0 +1,44 @@
+.Container {
+  margin-top: 15px;
+  background-color: white;
+  height: 100%;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 36px;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  img {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.friends {
+  margin-top: 18px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 24px;
+  overflow: hidden;
+}
+
+.friendsCount {
+  color: #65676b;
+}
+
+.friend {
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
