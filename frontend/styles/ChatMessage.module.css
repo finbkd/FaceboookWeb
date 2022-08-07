@@ -1,0 +1,132 @@
+.Container {
+  display: inline;
+  min-height: 100vh;
+  width: 70%;
+  height: 100%;
+  border-right: 2px solid #e4e6eb;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 64px;
+  border-bottom: 2px solid #e4e6eb;
+}
+
+.profilePicture {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.headerIcon {
+  height: 23px;
+  width: 23px;
+  margin-left: 20px;
+  fill: #1877f2;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.chatContainer {
+  padding-left: 12px;
+  height: 712px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.leftSide {
+  display: flex;
+  align-content: center;
+  margin-bottom: 3px;
+}
+
+.leftSidePicture {
+  margin-top: 2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.text {
+  padding-left: 14px;
+  font-size: 14px;
+  z-index: 999;
+  background-color: #ebedf0;
+  width: auto;
+  max-width: 588px;
+  padding-right: 14px;
+  min-height: 35px;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding-top: 10px;
+  margin-bottom: 2px;
+}
+
+.rightSide {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+}
+
+.rightSideText {
+  padding-left: 14px;
+  font-size: 14px;
+  z-index: 999;
+  background-color: #1877f2;
+  color: white;
+  width: auto;
+  max-width: 588px;
+  padding-right: 14px;
+  min-height: 35px;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 20px;
+  padding-top: 7px;
+}
+
+.chatInput {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.optionIcon {
+  margin-top: 14px;
+  height: 20px;
+  width: 20px;
+  fill: #1877f2;
+  margin-right: 15px;
+}
+
+.input {
+  padding-left: 18px;
+  font-size: 14px;
+  z-index: 999;
+  background-color: #f0f2f5;
+  width: 100%;
+  padding-right: 10px;
+  height: 35px;
+  margin-top: 13px;
+  margin-right: 10px;
+  border-radius: 20px;
+}/*# sourceMappingURL=ChatMessage.module.css.map */

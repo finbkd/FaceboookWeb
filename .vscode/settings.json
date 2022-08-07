@@ -20,7 +20,7 @@
     // FF0 - yellow
     {
       // MAIN HEADER
-      "tag": "T/",
+      "tag": "a/",
       "color": "#ebc033",
       "strikethrough": false,
       "underline": false,
@@ -30,17 +30,17 @@
     },
     {
       //COMPONENT FUNCTION
-      "tag": "M/",
-      "color": "#884EA0",
+      "tag": "b/",
+      "color": "#b38693",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
-      "bold": true,
+      "bold": false,
       "italic": false
     },
     {
       //M SEMI COMPONENT
-      "tag": "S/",
+      "tag": "c/",
       "color": "#2874A6",
       "strikethrough": false,
       "underline": false,

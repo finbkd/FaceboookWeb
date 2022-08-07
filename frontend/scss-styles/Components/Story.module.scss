@@ -1,9 +1,10 @@
 .container {
   display: flex;
-  width: 612px;
+  width: 685px;
   // background-color: red;
   margin-top: 25px;
   margin-bottom: 22px;
+  // overflow: hidden;
 }
 
 .storyAdd {
@@ -25,18 +26,20 @@
 
   img {
     border-radius: 8px;
-
+    width: 128px;
+    height: 182px;
     background-size: cover;
   }
 }
 
 .image {
+  // width: 128px;
   position: relative;
 }
 
 .image:first-child::after {
   height: 182px;
-  width: 128px;
+  // width: 128px;
 }
 
 .image::after {
@@ -62,6 +65,7 @@
 }
 
 .bigcircle {
+  z-index: 99;
   position: absolute;
   right: 41.6px;
   bottom: 30px;
@@ -80,7 +84,7 @@
   fill: #1877f2;
   width: 33px;
   height: 33px;
-  z-index: 999;
+  z-index: 99;
 }
 
 .image {
@@ -94,14 +98,68 @@
 }
 
 .storyName {
+  display: flex;
+  justify-content: center;
   position: absolute;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.3px;
-  right: 19px;
-  margin: 0 auto;
-  bottom: 8px;
   color: white;
-
+  // padding-bottom: -20px;
   z-index: 999;
+  left: 0;
+  right: 70px;
+  top: 208px;
+  // margin: auto;
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: flex;
+    width: 100%;
+    // background-color: red;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    // overflow: hidden;
+  }
+}
+
+@media (max-width: 750px) {
+  .bigcircle {
+    z-index: 99;
+    position: absolute;
+    right: 21.6px;
+    bottom: 30px;
+    color: white;
+    fill: white;
+    width: 40px;
+    height: 40px;
+    z-index: 99;
+  }
+
+  .button {
+    position: absolute;
+    right: 25px;
+    bottom: 34px;
+    color: #1877f2;
+    fill: #1877f2;
+    width: 33px;
+    height: 33px;
+  }
+
+  .storyName {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: white;
+    // padding-bottom: -20px;
+    z-index: 999;
+    left: 0;
+    right: 40px;
+    top: 208px;
+    // margin: auto;
+  }
 }

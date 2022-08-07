@@ -1,4 +1,42 @@
 .Container {
+  background-color: #f0f2f5;
   margin-left: 543px;
   width: 678px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+@media (max-width: 1660px) {
+  .Container {
+    margin-left: 30%;
+    width: 678px;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .Container {
+    margin-left: 25%;
+    width: 678px;
+    min-height: 100vh;
+    height: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .Container {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 950px) {
+  .Container {
+    margin-left: 18%;
+  }
+}
+@media (max-width: 850px) {
+  .Container {
+    background-color: #f0f2f5;
+    width: 80%;
+    min-height: 100vh;
+    height: 100%;
+  }
 }/*# sourceMappingURL=MainFeed.module.css.map */

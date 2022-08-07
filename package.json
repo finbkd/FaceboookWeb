@@ -15,6 +15,7 @@
     "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "sass": "^1.53.0"
   }
 }

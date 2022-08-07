@@ -1,0 +1,8 @@
+.Container {
+  display: flex;
+  width: 100vw;
+}
+
+.MessageBar {
+  margin-left: 80px;
+}/*# sourceMappingURL=Messages.module.css.map */

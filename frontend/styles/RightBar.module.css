@@ -1,6 +1,7 @@
 .Container {
   background-color: #f0f2f5;
-  margin-left: 120px;
+  position: fixed;
+  right: 225px;
 }
 
 .Title {
@@ -11,9 +12,11 @@
 }
 
 .friend {
+  cursor: pointer;
   margin-top: 20px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .friend img {
   height: 24px;
@@ -22,8 +25,52 @@
   margin-right: 12px;
 }
 
+.friend:hover {
+  background-color: #e4e6eb;
+}
+
 .name {
   color: #050505;
   font-size: 14.3px;
   font-weight: 500;
+}
+
+.onlineStatus {
+  position: absolute;
+  background-color: rgb(143, 229, 14);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  bottom: 2px;
+  left: 20px;
+}
+
+@media (max-width: 1600px) {
+  .Container {
+    background-color: #f0f2f5;
+    position: fixed;
+    right: 115px;
+  }
+}
+@media (max-width: 1478px) {
+  .Container {
+    background-color: #f0f2f5;
+    position: fixed;
+    right: 85px;
+  }
+}
+@media (max-width: 1000px) {
+  .Container {
+    background-color: #f0f2f5;
+    position: fixed;
+    right: 45px;
+  }
+}
+@media (max-width: 950px) {
+  .Container {
+    background-color: #f0f2f5;
+    position: fixed;
+    display: none;
+    right: 45px;
+  }
 }/*# sourceMappingURL=RightBar.module.css.map */

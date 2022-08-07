@@ -1,20 +1,21 @@
+import { useEffect, useState } from "react";
 import styles from "../../styles/Photos.module.css";
 
-const Photos = () => {
+const Photos = ({ post }) => {
+  const [photo, setPhoto] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setPhoto(post);
+    if (post) {
+      setIsLoading(false);
+    }
+  }, [post]);
+
   return (
     <div className={styles.Container}>
       <div className={styles.title}>Photos</div>
-      <div className={styles.photos}>
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-        <img src="/images/lorde.jpg" />
-      </div>
+      {!isLoading && <div className={styles.photos}>{photo.map((p) => (p.img ? <img src={`${p.img}`} /> : ""))}</div>}
     </div>
   );
 };

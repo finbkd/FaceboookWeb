@@ -14,6 +14,7 @@
     height: 150px;
     width: 150px;
     overflow: hidden;
+    object-fit: scale-down;
   }
 }
 
@@ -25,8 +26,8 @@
 .photos {
   margin-top: 18px;
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 4px;
   row-gap: 4px;
   overflow: hidden;

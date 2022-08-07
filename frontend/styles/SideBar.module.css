@@ -1,13 +1,15 @@
 .MainContainer {
   z-index: 999;
   position: fixed;
-  height: 100vh;
+  height: 1388px;
   display: grid;
   grid-template-columns: 80px 20px;
 }
 
 .sidebar_container {
+  z-index: 9999999;
   width: 80px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -35,13 +37,24 @@
   margin-left: 26px;
   margin-bottom: 20px;
 }
-.sidebar_list img {
+.sidebar_list .profilePicture {
+  position: relative;
   margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 50%;
-  width: 45px;
-  height: 42px;
+  width: 41px;
+  height: 41px;
   margin-left: 18px;
+}
+
+.logo {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 78px;
+  right: 38px;
+  border: 3px solid white;
+  border-radius: 50px;
 }
 
 .active svg {
@@ -50,7 +63,93 @@
 }
 
 .sideBarDrawer {
-  background-color: #fefaf5;
-  width: 360px;
+  background-color: white;
+  border-right: 2px solid #e4e6eb;
+  width: 350px;
   height: 100vh;
+}
+
+.Container {
+  padding-top: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profilePhoto {
+  position: relative;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  margin-right: 7px;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  margin-left: 14px;
+}
+
+.profileContainer {
+  cursor: pointer;
+  background-color: white;
+  height: 70px;
+  margin-top: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profileName {
+  font-weight: 500;
+}
+
+.option {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingIcon {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+}
+
+.settingText {
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.iconContainer {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #e4e6eb;
+  position: relative;
+}
+
+.notificationContainer {
+  position: relative;
+}
+
+.notificationNumber {
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  padding-top: 1px;
+  border-radius: 50%;
+  font-size: 9px;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  bottom: 13px;
+  right: 21px;
 }/*# sourceMappingURL=SideBar.module.css.map */
