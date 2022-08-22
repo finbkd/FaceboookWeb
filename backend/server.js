@@ -17,11 +17,11 @@ import { createServer } from "http";
 // import Peer from "peerjs";
 
 //a/ routes
-import userRoute from "../backend/routes/users.js";
-import authRoute from "../backend/routes/auth.js";
-import postRoute from "../backend/routes/posts.js";
-import commentRoute from "../backend/routes/comment.js";
-import chatRoute from "../backend/routes/chat.js";
+import userRoute from "./routes/users.js";
+import authRoute from "./routes/auth.js";
+import postRoute from "./routes/posts.js";
+import commentRoute from ".routes/comment.js";
+import chatRoute from "./routes/chat.js";
 import notificationRoute from "./routes/notification.js";
 
 import friendRequestRoute from "../backend/routes/friendRequest.js";
@@ -31,7 +31,7 @@ import { protect } from "./middleware/authMiddleware.js";
 
 const corsOption = {
   credentials: true,
-  origin: ["http://localhost:3000"],
+  origin: ["https://social-network-clone-seven.vercel.app"],
 };
 
 const app = express();
@@ -44,7 +44,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://localhost:3000"],
+    origin: ["https://social-network-clone-seven.vercel.app"],
     credentials: true,
     methods: ["GET", "POST"],
     // allowedHeaders: "origin, content-type, accept",
