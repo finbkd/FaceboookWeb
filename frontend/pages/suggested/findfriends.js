@@ -66,7 +66,7 @@ const FindFriends = () => {
             <div className={styles.friends}>
               {users.map((user) => {
                 return (
-                  <Link href={`/${user.userName}`}>
+                  <Link key={user.userName} href={`/${user.userName}`}>
                     <div className={styles.friend}>
                       <img src={user.profilePicture} />
                       <span>{user.userName}</span>
