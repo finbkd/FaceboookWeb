@@ -41,6 +41,7 @@ connectDB();
 // console.log(peer);
 
 const httpServer = createServer(app);
+
 const io = new Server(httpServer, {
   cors: {
     origin: ["http://localhost:3000"],
@@ -98,6 +99,8 @@ io.on("connection", async (socket) => {
   });
 });
 
-httpServer.listen(5000, () => {
+const port = process.env.PORT || 5000;
+
+httpServer.listen(port, () => {
   console.log("SERVER IS RUNNING AT PORT 5000...");
 });
