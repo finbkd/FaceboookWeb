@@ -1,6 +1,6 @@
 import styles from "../../styles/voicecall.module.css";
 
-const voicecall = () => {
+const Voicecall = () => {
   return (
     <div>
       <div className={styles.Container}>
@@ -12,4 +12,4 @@ const voicecall = () => {
     </div>
   );
 };
-export default voicecall;
+export default Voicecall;

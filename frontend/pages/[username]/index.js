@@ -7,7 +7,7 @@ import { api } from "../../http";
 import ProfileFeed from "../../Components/ProfileFeed/ProfileFeed";
 import SideBar from "../../Components/SideBar";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
@@ -78,4 +78,4 @@ const index = () => {
     </>
   );
 };
-export default index;
+export default Index;

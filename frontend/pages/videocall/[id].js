@@ -5,7 +5,7 @@ import styles from "../../styles/VideoCall.module.css";
 
 // client-side
 
-const videocall = () => {
+const Videocall = () => {
   let Peer;
   if (typeof navigator !== "undefined") {
     Peer = require("peerjs").default;
@@ -93,4 +93,4 @@ const videocall = () => {
     </>
   );
 };
-export default videocall;
+export default Videocall;

@@ -9,7 +9,7 @@ import { setAuth } from "../store/authSlice";
 import RegisterForm from "../Components/RegisterForm";
 import { useToast } from "@chakra-ui/react";
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -99,4 +99,4 @@ const login = () => {
     </>
   );
 };
-export default login;
+export default Login;

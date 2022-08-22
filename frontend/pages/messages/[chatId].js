@@ -11,7 +11,7 @@ import { setAuth } from "../../store/authSlice";
 import ChatMessage from "../../Components/Messages/ChatMessage";
 import { api } from "../../http";
 
-const messages = () => {
+const Messages = () => {
   const [loading, setLoading] = useState(true);
   const [dataloading, setDataLoading] = useState(true);
   const [messages, setMessages] = useState([]);
@@ -68,4 +68,4 @@ const messages = () => {
     </>
   );
 };
-export default messages;
+export default Messages;

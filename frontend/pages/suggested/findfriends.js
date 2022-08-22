@@ -13,7 +13,7 @@ import { setAuth } from "../../store/authSlice";
 import { api } from "../../http";
 import Link from "next/link";
 
-const findFriends = () => {
+const FindFriends = () => {
   const router = useRouter();
   const dispatch = useDispatch();
   const [users, setUsers] = useState([]);
@@ -82,4 +82,4 @@ const findFriends = () => {
   );
 };
 
-export default findFriends;
+export default FindFriends;
